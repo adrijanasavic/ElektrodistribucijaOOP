@@ -14,6 +14,7 @@ public class DistribucijaEps {
 	private String naziv;
 	private String adresa;
 	private String telefon;
+	private String nesto;
 	private ArrayList<RacunEps> lista;
 
 	public DistribucijaEps() {
