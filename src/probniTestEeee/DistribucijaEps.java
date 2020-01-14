@@ -65,7 +65,7 @@ public class DistribucijaEps {
 		this.lista = lista;
 	}
 
-	public boolean unosRacuna(RacunEps racun) { // 2 unos racuna
+	public boolean unosRacuna(RacunEps racun) { 
 		for (int i = 0; i < this.lista.size(); i++) {
 			if (this.lista.get(i).getId() == racun.getId()) {
 				return false;
@@ -75,7 +75,7 @@ public class DistribucijaEps {
 		return true;
 	}
 
-	public void ispisRacuna() { // 3 ispis racuna
+	public void ispisRacuna() {
 
 		System.out.printf("%10s %20s %15s %15s %10s %15s %15s \n", "Id", "Naziv vlasnika", "Potrosna niza",
 				"Potrosna niza", "Cena racuna", "Mesec izdavanja", "Datum placanja");
@@ -86,7 +86,7 @@ public class DistribucijaEps {
 		}
 	}
 
-	public void izmenaRacuna(RacunEps racun) { // 4 izmena racuna
+	public void izmenaRacuna(RacunEps racun) { 
 		for (int i = 0; i < this.lista.size(); i++) {
 			if (this.lista.get(i).getId() == racun.getId()) {
 				this.lista.set(i, racun);
@@ -97,20 +97,18 @@ public class DistribucijaEps {
 		System.out.println("Racun nije pronadjena.");
 	}
 
-	public void brisanjeRacuna(int id) { // 5 brisanje racuna
+	public void brisanjeRacuna(int id) { 
 		for (int i = 0; i < this.lista.size(); i++) {
 			if (this.lista.get(i).getId() == id) {
 				this.lista.remove(i);
 				System.out.println("Racun je uspesno obrisana.");
 				return;
 			}
-
 		}
 		System.out.println("Racun nije uspesno obrisana.");
-
 	}
 
-	public void ispisRacunaMinMax(int minNiza, int maxNiza, int minVisa, int maxVisa) { // 6
+	public void ispisRacunaMinMax(int minNiza, int maxNiza, int minVisa, int maxVisa) { 
 		System.out.printf("%10s %20s %15s %15s %10s %15s %15s \n", "Id", "Naziv vlasnika", "Potrosna niza",
 				"Potrosna niza", "Cena racuna", "Mesec izdavanja", "Datum placanja");
 		System.out.println(
@@ -123,12 +121,10 @@ public class DistribucijaEps {
 
 				System.out.println(this.lista.get(i));
 			}
-
 		}
-
 	}
 
-	public void ispisProsPot(int mesec) { // 7
+	public void ispisProsPot(int mesec) {
 
 		int ukupnaNiza = 0;
 		int ukupnaVisa = 0;
@@ -147,7 +143,7 @@ public class DistribucijaEps {
 
 	}
 
-	public void ispisVecPros(int mesec) { // 8 nauciti
+	public void ispisVecPros(int mesec) { 
 		int ukupnaNizaVisa = 0;
 		int brRacuna = 0;
 		for (int i = 0; i < this.lista.size(); i++) {
@@ -171,7 +167,7 @@ public class DistribucijaEps {
 		}
 	}
 
-	public void ispisNajRacun(LocalDate pocetak, LocalDate kraj) { // 9
+	public void ispisNajRacun(LocalDate pocetak, LocalDate kraj) {
 		System.out.printf("%10s %20s %15s %15s %10s %15s %15s \n", "Id", "Naziv vlasnika", "Potrosna niza",
 				"Potrosna niza", "Cena racuna", "Mesec izdavanja", "Datum placanja");
 		System.out.println(
