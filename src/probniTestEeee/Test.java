@@ -109,7 +109,7 @@ public class Test {
 
 	}
 
-	public static void unosDistribucije(DistribucijaEps distribucijaEps) { // 1
+	public static void unosDistribucije(DistribucijaEps distribucijaEps) {
 		System.out.print("Unesite naziv elektrodistribucije:");
 		String naziv = scanner.nextLine();
 		distribucijaEps.setNaziv(naziv);
@@ -124,7 +124,7 @@ public class Test {
 
 	}
 
-	public static void unosRacuna(DistribucijaEps distribucijaEps) { // 2
+	public static void unosRacuna(DistribucijaEps distribucijaEps) { 
 
 		int id = 0;
 		String idString = null;
@@ -186,7 +186,7 @@ public class Test {
 
 	}
 
-	public static void izmenaRacuna(DistribucijaEps distribucijaEps) { // 4
+	public static void izmenaRacuna(DistribucijaEps distribucijaEps) { 
 		int id = 0;
 		String idString = null;
 		String nazivVlasnika = null;
@@ -241,7 +241,7 @@ public class Test {
 		distribucijaEps.izmenaRacuna(racunEps);
 	}
 
-	public static void brisanjeRacuna(DistribucijaEps distribucijaEps) { // 5
+	public static void brisanjeRacuna(DistribucijaEps distribucijaEps) { 
 		int id = 0;
 		String idString = null;
 		do {
@@ -252,7 +252,7 @@ public class Test {
 		distribucijaEps.brisanjeRacuna(id);
 	}
 
-	public static void ispisRacunaMinMax(DistribucijaEps distribucijaEps) { // 6
+	public static void ispisRacunaMinMax(DistribucijaEps distribucijaEps) {
 		/* int minNiza, int maxNiza, int minVisa, int maxVisa */
 		int minNiza = 0;
 		String minNizaS = null;
@@ -288,7 +288,7 @@ public class Test {
 
 	}
 
-	public static void ispisProsPot(DistribucijaEps distribucijaEps) { // 7
+	public static void ispisProsPot(DistribucijaEps distribucijaEps) {
 		int mesec = 0;
 		String mesecS = null;
 		do {
@@ -299,7 +299,7 @@ public class Test {
 		distribucijaEps.ispisProsPot(mesec);
 	}
 
-	public static void ispisVecPros(DistribucijaEps distribucijaEps) { // 8
+	public static void ispisVecPros(DistribucijaEps distribucijaEps) {
 		int mesec = 0;
 		String mesecS = null;
 		do {
@@ -310,7 +310,7 @@ public class Test {
 		distribucijaEps.ispisVecPros(mesec);
 	}
 
-	public static void ispisNajRacun(DistribucijaEps distribucijaEps) { // 9
+	public static void ispisNajRacun(DistribucijaEps distribucijaEps) { 
 		LocalDate pocetak = null;
 		String pocetakS = null;
 		LocalDate kraj = null;
@@ -394,7 +394,6 @@ public class Test {
 
 		} while (!answer.equals("x"));
 
-		// distribucijaEps.save("racuni.txt");
 		scanner.close();
 
 	}
